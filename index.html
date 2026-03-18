@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finland Flight Radar</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div id="info-panel" class="hidden">
+        <h2>Flight Details</h2>
+        <div class="detail-row">
+            <span class="label">Callsign:</span>
+            <span id="detail-callsign" class="value">-</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Origin:</span>
+            <span id="detail-country" class="value">-</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Altitude:</span>
+            <span id="detail-altitude" class="value">-</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Speed:</span>
+            <span id="detail-velocity" class="value">-</span>
+        </div>
+        <div class="detail-row">
+            <span class="label">Heading:</span>
+            <span id="detail-heading" class="value">-</span>
+        </div>
+        <div class="last-updated">Last Updated: <span id="last-updated-time">-</span></div>
+    </div>
+
+    <div class="app-header">
+        <h1>Finland Flight Radar</h1>
+        <p class="subtitle">Live air traffic over Finland</p>
+    </div>
+
+    <div class="status-indicator">
+        <div class="ping" id="status-ping"></div>
+        <span id="status-text">Fetching data...</span>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+</html>
