@@ -47,6 +47,11 @@ A premium, live flight tracking application centered over Finland. Built with mo
 
 This project utilizes live data from [ADSB.lol](https://adsb.lol/), an open-source flight tracking community. Data is refreshed every 5 seconds to ensure accuracy.
 
+## 🔗 Project Links
+
+- **GitHub Repository**: [https://github.com/ashrf-cmyk/Finland-Flight-Radar](https://github.com/ashrf-cmyk/Finland-Flight-Radar)
+- **Live Deployment (Vercel)**: [https://finland-flight-radar-kappa.vercel.app/](https://finland-flight-radar-kappa.vercel.app/)
+
 ---
 
 *Developed as part of the AI in Practice Course.*

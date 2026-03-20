@@ -82,3 +82,7 @@ typings/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Project specific ignores
+notebooklm-config.json
+chrome_profile_notebooklm/
